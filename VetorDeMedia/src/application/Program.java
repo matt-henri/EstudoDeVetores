@@ -16,7 +16,7 @@ public class Program {
 		int n = entrada.nextInt();
 		Product[] vect = new Product[n];
 		
-		for (int i=0; i<n; i++) {
+		for (int i=0; i<vect.length; i++) {
 			entrada.nextLine();
 			System.out.print("Nome do produto: ");
 			String name = entrada.nextLine();
@@ -26,7 +26,7 @@ public class Program {
 		}
 		
 		double soma = 0.0;
-		for ( int i=0; i<n; i++) {
+		for ( int i=0; i<vect.length; i++) {
 			soma += vect[i].getPrice();
 		}
 		
